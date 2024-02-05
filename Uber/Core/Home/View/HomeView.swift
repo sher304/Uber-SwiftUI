@@ -43,6 +43,16 @@ struct HomeView: View {
             if mapState == .locationSelected || mapState == .routeAdded{
                 RideRequestView()
                     .transition(.move(edge: .bottom))
+                    .gesture(
+                        DragGesture()
+                            .onEnded({ action in
+                                if action.translation.height > 100 {
+                                    withAnimation(.spring(dampingFraction: 0.7)) {
+                                        mapState = .noInput
+                                    }
+                                }
+                            })
+                    )
             }
         }
         .ignoresSafeArea(edges: .bottom)

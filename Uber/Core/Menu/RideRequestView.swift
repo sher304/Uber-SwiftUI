@@ -17,7 +17,7 @@ struct RideRequestView: View {
             Capsule()
                 .foregroundStyle(.gray)
                 .frame(width: 42, height: 6)
-                .padding(.top, 8)
+                .padding(.top, 8)            
             // TRIP INFO
             
             HStack {
