@@ -1,6 +1,6 @@
 # Uber Clone
 
-![Uber Clone Logo](![Alt Text](https://github.com/sher304/Uber-SwiftUI/raw/main/assets/87121837/fa985f44-3cc5-4f60-9869-291d98b06ae9.png))
+![Uber Clone Logo](https://github.com/sher304/Uber-SwiftUI/raw/main/assets/87121837/fa985f44-3cc5-4f60-9869-291d98b06ae9.png)
 
 ## Overview
 
