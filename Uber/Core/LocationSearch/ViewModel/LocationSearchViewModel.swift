@@ -46,7 +46,6 @@ final class LocationSearchViewModel: NSObject, ObservableObject {
             let coordinate = item.placemark.coordinate
             self.selectedLocationCoordinate = DestinationModel(title: location.title,
                                                                cooridnate: coordinate)
-            print("Coordinate : \(coordinate)")
         }
     }
     

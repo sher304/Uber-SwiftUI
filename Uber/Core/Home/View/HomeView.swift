@@ -21,6 +21,10 @@ struct HomeView: View {
                 if mapState == .searchingForLocation {
                     LocationSearchView(mapState: $mapState)
                 } else if mapState == .noInput{
+                    MapViewActionButton(mapState: $mapState)
+                        .padding(.leading, 20)
+                        .padding(.top)
+                    
                     LocationSearchActivationView()
                         .padding(.top, 72)
                         .onTapGesture {
@@ -28,11 +32,11 @@ struct HomeView: View {
                                 mapState = .searchingForLocation
                             }
                         }
+                } else {
+                    MapViewActionButton(mapState: $mapState)
+                        .padding(.leading, 20)
+                        .padding(.top)
                 }
-                
-                MapViewActionButton(mapState: $mapState)
-                    .padding(.leading, 20)
-                    .padding(.top)
             }
             
             

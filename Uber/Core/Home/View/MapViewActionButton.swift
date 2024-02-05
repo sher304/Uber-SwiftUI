@@ -32,7 +32,7 @@ struct MapViewActionButton: View {
     func actionForState(state: MapViewState) {
         switch state {
         case .noInput:
-            print("NO INPUt")
+            print("no input")
         case .locationSelected, .routeAdded:
             mapState = .noInput
             viewModel.selectedLocationCoordinate = nil

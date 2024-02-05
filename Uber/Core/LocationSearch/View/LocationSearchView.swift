@@ -16,6 +16,25 @@ struct LocationSearchView: View {
     var body: some View {
         VStack {
             //Header view
+            ZStack {
+                HStack {
+                    Button(action: {
+                        withAnimation(.spring(dampingFraction: 0.8)) {
+                            mapState = .noInput
+                        }
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(Color.theme.primaryTextColor)
+                    })
+                    
+                    .padding(.leading)
+                    Spacer()
+                }
+                
+                Text("Your route")
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
             
             HStack {
                 VStack {
