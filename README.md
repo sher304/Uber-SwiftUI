@@ -6,6 +6,12 @@
 
 This project is a simple clone of the Uber application, developed as a pet project using SwiftUI with MVVM architecture and MapKit.
 
+
+
+https://github.com/sher304/Uber-SwiftUI/assets/87121837/0da051d9-c694-4b8f-9a0b-fe428d3ccaa5
+
+
+
 ## Features
 
 - **Map Integration**: Utilizes MapKit to provide interactive maps and location-based services.
