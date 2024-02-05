@@ -32,8 +32,8 @@ struct MapViewActionButton: View {
     func actionForState(state: MapViewState) {
         switch state {
         case .noInput:
-            print("NO INPUt")
-        case .locationSelected:
+            print("no input")
+        case .locationSelected, .routeAdded:
             mapState = .noInput
             viewModel.selectedLocationCoordinate = nil
         case .searchingForLocation:
@@ -47,7 +47,7 @@ struct MapViewActionButton: View {
             return "line.3.horizontal"
         case .locationSelected:
             return "arrow.left"
-        case .searchingForLocation:
+        default:
             return "arrow.left"
         }
     }
