@@ -36,7 +36,7 @@ struct HomeView: View {
             }
             
             
-            if mapState == .locationSelected {
+            if mapState == .locationSelected || mapState == .routeAdded{
                 RideRequestView()
                     .transition(.move(edge: .bottom))
             }
